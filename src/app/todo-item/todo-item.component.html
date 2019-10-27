@@ -1,0 +1,17 @@
+
+<div> 
+    {{mytask.todoItem}}
+    
+    <button  (click) = 'updateTodo("urgent")'
+    [ngClass] = "{'urgent': urgent}">urgent</button>
+
+    <button  (click) = 'updateTodo("days")'
+    [ngClass] = "{'days': days}">days</button>
+
+    <button (click) = 'updateTodo("week")'
+    [ngClass] = "{'week': week}">week</button>
+    
+    
+</div>
+
+

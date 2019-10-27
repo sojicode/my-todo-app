@@ -1,4 +1,4 @@
-My GitHub URL: 
+My GitHub URL: https://github.com/sojicode/my-todo-app
 
 Create an application todo-app and this application contains a dashboard component, a todo-item component, a todo-list component, a new-todo-item component, and a page-not-found component. I added a main component so when you connect to the web it shows the main page first and then you can navigate from the main page to the dashboard page. 
 
@@ -7,6 +7,8 @@ The dashboard page displays a list of todo list items as well as a component for
 Also, I created todo-service and injected this service into component and used the function from the service. There are two functions: adding and updating.
 
 Additionally, I set up a new firebase account and created a new firebase project.
+(extra credit 1)
+https://todo-app-95057.firebaseapp.com/
 
 
 # TodoApp
