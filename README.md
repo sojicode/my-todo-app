@@ -7,7 +7,7 @@ The dashboard page displays a list of todo list items as well as a component for
 Also, I created todo-service and injected this service into component and used the function from the service. There are two functions: adding and updating.
 
 Additionally, I set up a new firebase account and created a new firebase project.
-(extra credit 1) https://todo-app-95057.firebaseapp.com/
+(extra credit 1) https://my-todo-app-17a62.firebaseapp.com/dashboard
 (extra credit 2) I created a remove button and it removes the list items that you clicked.
 
 
