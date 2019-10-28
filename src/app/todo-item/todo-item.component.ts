@@ -14,7 +14,6 @@ export class TodoItemComponent implements OnInit {
   urgent: boolean;
   days: boolean;
   week: boolean;
-  // remove: boolean;
 
   constructor(public service: TodoItemService) { 
     this.service = service;
@@ -29,10 +28,6 @@ export class TodoItemComponent implements OnInit {
     // console.log(type);
     this.taskList = this.service.deleteMyTask(type);
     
-
-  }
-
-  captureMousePos($event: MouseEvent){
 
   }
 

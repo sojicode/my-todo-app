@@ -7,7 +7,7 @@ export class Task {
   
       this.todoItem = todoItem;
       this.dueDate = dueDate;
-      
+    
       }
       
   }

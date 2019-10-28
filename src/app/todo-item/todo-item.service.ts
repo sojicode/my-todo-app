@@ -1,9 +1,5 @@
 import { Task } from './task.model';
-import { TodoItemComponent } from './todo-item.component';
-import { TodoListComponent } from '../todo-list/todo-list.component';
 import { Injectable, Output } from '@angular/core';
-import { EventEmitter } from 'events';
-
 
 @Injectable({
   providedIn: 'root'
@@ -18,9 +14,8 @@ export class TodoItemService {
   remove: boolean;
   dueDate: string;
   todoItem: string;
-  flag: boolean;
 
-  constructor() { 
+  constructor() {   
     this.urgent = false;
     this.days = false;
     this.week = false;
@@ -80,10 +75,9 @@ export class TodoItemService {
 
     // console.log(selectItem);
     this.tasks = this.getTodo();
+    console.log(this.tasks);
 
-  
     for (var i = 0; i < this.tasks.length; i++){
-
       if(selectItem == this.tasks[i].todoItem) {
         // console.log(this.tasks[i].todoItem); 
         this.tasks.splice(i, 1);
