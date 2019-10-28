@@ -12,6 +12,7 @@ import { TodoListComponent } from '../todo-list/todo-list.component';
 export class NewTodoItemComponent implements OnInit {
 
   @Input() myTaskList: Task[];
+  tasks: Task[];
 
 
   constructor(public service: TodoItemService) {
@@ -19,7 +20,8 @@ export class NewTodoItemComponent implements OnInit {
    }
 
   addTodo(task: string): void {
-    this.myTaskList = this.service.addItemToArray(this.myTaskList, task, "urgent");
+    this.tasks = this.service.getTodo();
+    this.myTaskList = this.service.addItemToArray(task, "urgent");
   }
 
   ngOnInit() {

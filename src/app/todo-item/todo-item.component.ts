@@ -10,9 +10,11 @@ import { Task } from '../todo-item/task.model';
 export class TodoItemComponent implements OnInit {
 
   @Input() mytask: Task;
+  taskList: Task[];
   urgent: boolean;
   days: boolean;
   week: boolean;
+  // remove: boolean;
 
   constructor(public service: TodoItemService) { 
     this.service = service;
@@ -21,6 +23,17 @@ export class TodoItemComponent implements OnInit {
   updateTodo(type: string): void {
     [this.urgent, this.days, this.week] = this.service.updateMyTask(type);
   
+  }
+
+  deleteTodo(type: string ): void {
+    // console.log(type);
+    this.taskList = this.service.deleteMyTask(type);
+    
+
+  }
+
+  captureMousePos($event: MouseEvent){
+
   }
 
   ngOnInit() {

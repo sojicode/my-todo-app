@@ -13,20 +13,17 @@ export class DashboardComponent implements OnInit {
 
   taskList: Task[];
 
-  constructor(public service: TodoItemService) {
-    this.service = service;
-    this.taskList = [ new Task ("Do the web application project", "urgent"),
-                      new Task ("Visit my friend in Miami", "week"),
-                      new Task ("Go for a walk with dog", "day"),
-                      new Task ("Search for new desk chair", "week"),
-                      new Task ("Check the email from K", "urgent")
-
-                    ];
+  constructor(public service: TodoItemService ){
+    service.createTodo();
+    this.taskList = service.getTodo();
+ 
   }
 
-  getList(): Task[] {
+  getList(): Task[]{
+    this.taskList = this.service.getTodo();
     return this.taskList;
   }
+
 
   ngOnInit() {
   }

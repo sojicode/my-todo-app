@@ -8,6 +8,7 @@ Also, I created todo-service and injected this service into component and used t
 
 Additionally, I set up a new firebase account and created a new firebase project.
 (extra credit 1) https://todo-app-95057.firebaseapp.com/
+(extra credit 2) I created a remove button and it removes the list items that you clicked.
 
 
 # TodoApp

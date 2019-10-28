@@ -1,10 +1,12 @@
 <h1>
     <div class="dash" style="color:mediumturquoise">Dashboard</div>
-    <app-new-todo-item *ngFor= "let task of getList()" [myTaskList] = "getList()">  
-    </app-new-todo-item>   
+    <app-new-todo-item *ngFor= "let task of getList()" [myTaskList] = "getList()"></app-new-todo-item>   
 </h1> 
 
 <div>
-<app-todo-item *ngFor="let task of taskList" [mytask]="task"></app-todo-item>   
+<app-todo-item *ngFor="let task of taskList" [mytask]="task"></app-todo-item>  
 </div> 
 
+
+
+ 
